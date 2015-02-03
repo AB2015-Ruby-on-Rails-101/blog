@@ -1,0 +1,4 @@
+<h1>Hello, <%= current_user.username %>!</h1>
+<%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+<%= link_to 'My Blog', articles_path %>
+<%= link_to 'New article', new_article_path %>
